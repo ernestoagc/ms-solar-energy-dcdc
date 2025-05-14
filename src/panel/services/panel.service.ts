@@ -23,7 +23,7 @@ export class PanelService {
     let urlBase= "https://re.jrc.ec.europa.eu/api/MRcalc";
     let {latitude,longitude, description} = this.mapCities.get(location);
 
-    let urlApi = `${urlBase}?lat=${latitude}&lon=${longitude}&horirrad=1&angle=${angle}&startyear=${year}&endyear=${year}&avtemp=1&optrad=1&selectrad=1&outputformat=json`
+    let urlApi = `${process.env.API_WEATHER}?lat=${latitude}&lon=${longitude}&horirrad=1&angle=${angle}&startyear=${year}&endyear=${year}&avtemp=1&optrad=1&selectrad=1&outputformat=json`
 
     console.log("==>URL");
     console.log(urlApi);
