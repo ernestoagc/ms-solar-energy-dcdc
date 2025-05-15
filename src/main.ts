@@ -8,7 +8,7 @@ async function bootstrap() {
   const config = new DocumentBuilder()
   .setTitle('ms solar energy')
   .setDescription(
-    'The API details of the business solution for management functions of smart security solution.',
+    'API for management regarding solar panels energy',
   )
   .setVersion('1.0')
   .addTag('Notification')
