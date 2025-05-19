@@ -2,6 +2,9 @@ export class SolarEnergyDto {
     months: MonthEneryDto[]
     bestAngle:number
     city:string
+    totalEnergy:number
+    totalOptimalEnergy:number
+    quantityPanels:number
 }
 
 export class MonthEneryDto {

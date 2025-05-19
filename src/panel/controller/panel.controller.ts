@@ -13,8 +13,11 @@ export class PanelController {
     @HttpCode(HttpStatus.OK)
     public fetchNotification(
         @Query('location') location: string, 
-        @Query('angle') angle: string){
-       return this.panelService.getSolarEnergy(location,angle);
+        @Query('angle') angle: string,
+        @Query('quantityPanel') quantityPanel: number
+    
+    ){
+       return this.panelService.getSolarEnergy(location,angle,quantityPanel);
     }
 
 

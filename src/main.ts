@@ -11,7 +11,7 @@ async function bootstrap() {
     'API for management regarding solar panels energy',
   )
   .setVersion('1.0')
-  .addTag('Notification')
+  .addTag('Energy')
   .addBearerAuth()
   .build();
   const document = SwaggerModule.createDocument(app, config);
