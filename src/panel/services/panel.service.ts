@@ -15,6 +15,7 @@ export class PanelService {
         this.mapCities = new Map();
         this.mapCities.set("STO", {latitude:59.400,longitude:17.934, description:'Stockholm'});
         this.mapCities.set("MAD", {latitude:40.4194864,longitude:-3.7166049, description:'Madrid'});
+        this.mapCities.set("BER", {latitude:52.5207396,longitude:13.3924599, description:'Berlin'});
 
       }
 
